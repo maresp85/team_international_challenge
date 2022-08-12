@@ -10,21 +10,21 @@ class DataCapture:
         else:
             self.inputs.append(value)
 
-    def less(self, value: int):
+    def less(self, value: int) -> None:
         result = 0
         for x in self.inputs: 
             if x < value:
                 result += 1
         print(f'Result: {result}. Only {result} values are less than {value}.')
 
-    def between(self, value1: int, value2: int):
+    def between(self, value1: int, value2: int) -> None:
         result = 0
         for x in self.inputs: 
             if value1 <= x <= value2:
                 result += 1
         print(f'Result: {result}. Only {result} values are between {value1} and {value2}.')
 
-    def greater(self, value: int):
+    def greater(self, value: int) -> None:
         result = 0
         for x in self.inputs: 
             if x > value:
